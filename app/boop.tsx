@@ -1,19 +1,24 @@
 import React from 'react';
 import {View, Text, Image, ScrollView, TextInput} from 'react-native';
+import { styled } from 'nativewind';
+
+const StyledText = styled(Text);
+const StyledView = styled(View);
+const StyledScrollView = styled(ScrollView);
 
 const App = () => {
   return (
-    <ScrollView>
-      <Text>Some text</Text>
-      <View>
-        <Text>Some more text</Text>
+    <StyledScrollView className='p-8'>
+      <StyledText className='text-red-800'>Some text heyyy</StyledText>
+      <StyledView>
+        <StyledText>Some more text</StyledText>
         <Image
           source={{
             uri: 'https://reactnative.dev/docs/assets/p_cat2.png',
           }}
           style={{width: 200, height: 200}}
         />
-      </View>
+      </StyledView>
       <TextInput
         style={{
           height: 40,
@@ -22,7 +27,7 @@ const App = () => {
         }}
         defaultValue="You can type in me"
       />
-    </ScrollView>
+    </StyledScrollView>
   );
 };
 

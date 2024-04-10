@@ -7,7 +7,7 @@ export default function Layout() {
         name="boop" // This is the name of the page and must match the url from root
         options={{
           drawerLabel: "Booper",
-          title: "overview",
+          title: "Random",
         }}
       />
 
@@ -15,7 +15,7 @@ export default function Layout() {
         name="chat" // This is the name of the page and must match the url from root
         options={{
           drawerLabel: "Chat",
-          title: "overview",
+          title: "Chat",
         }}
       />
     </Drawer>
